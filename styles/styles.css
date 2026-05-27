@@ -1,0 +1,225 @@
+
+
+/* Custom animations and styles */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.animate-slide-down {
+    animation: slideDown 0.5s ease-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+.animate-bounce-slow {
+    animation: bounce 3s infinite;
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+
+.bg-blur {
+    backdrop-filter: blur(8px);
+}
+
+
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e7eb;
+    left: 7px;
+    top: 24px;
+    z-index: -1;
+}
+
+/* Dark mode styles */
+.dark .timeline-dot::before {
+    background-color: #374151;
+}
+
+/* Active navigation link indicator */
+.nav-link.active {
+    color: #0ea5e9;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0ea5e9;
+    border-radius: 2px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+.bg-blur {
+    backdrop-filter: blur(8px);
+}
+.bg-blue-100,
+.bg-blue-900 {
+    transition: all 0.2s ease;
+}
+
+.bg-blue-100:hover,
+.bg-blue-900:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* Hover effect for soft skills */
+.bg-purple-100,
+.bg-purple-900 {
+    transition: all 0.2s ease;
+}
+
+.bg-purple-100:hover,
+.bg-purple-900:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.shadow-md {
+    transition: all 0.3s ease;
+}
+
+.shadow-md:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a more pronounced shadow */
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e7eb;
+    left: 7px;
+    top: 24px;
+    z-index: -1;
+}
+
+/* Hover effect for contact information box */
+#contact .bg-white,
+#contact .bg-gray-700 {
+    transition: all 0.3s ease;
+}
+
+#contact .bg-white:hover,
+#contact .bg-gray-700:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Hover effect for form box */
+#contact .shadow-lg {
+    transition: all 0.3s ease;
+}
+
+#contact .shadow-lg:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a more pronounced shadow */
+}
+
+/* Hover effect for the Education card */
+.bg-gray-50.dark\:bg-gray-700 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bg-gray-50.dark\:bg-gray-700:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
+}
